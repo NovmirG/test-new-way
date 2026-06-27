@@ -7,7 +7,7 @@
     "height": 512,
     "num_inference_steps": 28,
     "guidance_scale": 3.5,
-    "reference_image_url": "https://your-public-url.com/your-avatar.jpg",
+    "reference_image_url": "https://i.ibb.co/kVRbNz2X/avatar.jpg",
     "image_strength": 0.75
   },
   {
