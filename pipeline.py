@@ -11,7 +11,7 @@ from pathlib import Path
 from dataclasses import dataclass, field
 
 
-WAVESPEED_API_URL = "https://api.wavespeed.ai/api/v1"
+WAVESPEED_API_URL = "https://api.wavespeed.ai/api/v3"
 DEFAULT_MODEL = "openai/gpt-image-2/edit"
 OUTPUT_DIR = Path("output/avatars")
 
@@ -57,7 +57,7 @@ class WaveSpeedBatchPipeline:
             "enable_base64_output": False,
             "enable_sync_mode": False,
         }
-        url = f"{WAVESPEED_API_URL}/model_run/{self.config.model}"
+        url = f"{WAVESPEED_API_URL}/{self.config.model}"
         async with session.post(url, headers=self._headers, json=payload) as resp:
             if not resp.ok:
                 body = await resp.text()
@@ -66,7 +66,7 @@ class WaveSpeedBatchPipeline:
             return data["data"]["id"]
 
     async def _poll(self, session: aiohttp.ClientSession, request_id: str) -> dict:
-        url = f"{WAVESPEED_API_URL}/predictions/{request_id}"
+        url = f"{WAVESPEED_API_URL}/predictions/{request_id}/fetch"
         deadline = asyncio.get_event_loop().time() + self.config.timeout
         while asyncio.get_event_loop().time() < deadline:
             async with session.get(url, headers=self._headers) as resp:
