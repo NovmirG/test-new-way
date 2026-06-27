@@ -1,0 +1,29 @@
+[
+  {
+    "name": "avatar_professional",
+    "prompt": "Professional headshot portrait of a person, clean background, studio lighting, high quality, photorealistic",
+    "negative_prompt": "blurry, low quality, distorted, cartoon",
+    "width": 512,
+    "height": 512,
+    "num_inference_steps": 28,
+    "guidance_scale": 3.5
+  },
+  {
+    "name": "avatar_artistic",
+    "prompt": "Artistic digital avatar, vibrant colors, stylized portrait, modern illustration style",
+    "negative_prompt": "blurry, low quality, photorealistic",
+    "width": 512,
+    "height": 512,
+    "num_inference_steps": 28,
+    "guidance_scale": 3.5
+  },
+  {
+    "name": "avatar_minimal",
+    "prompt": "Minimal clean avatar icon, flat design, simple geometric face, white background",
+    "negative_prompt": "complex, detailed, photorealistic, dark",
+    "width": 512,
+    "height": 512,
+    "num_inference_steps": 20,
+    "guidance_scale": 3.0
+  }
+]
