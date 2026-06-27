@@ -27,6 +27,10 @@ class AvatarRequest:
     guidance_scale: float = 3.5
     seed: int = -1
     name: str = ""
+    # URL of a reference avatar image to guide generation (img2img)
+    reference_image_url: str = ""
+    # How strongly the reference image influences the output (0.0–1.0)
+    image_strength: float = 0.75
 
 
 @dataclass
@@ -58,6 +62,9 @@ class WaveSpeedBatchPipeline:
             "seed": request.seed,
             "enable_safety_checker": True,
         }
+        if request.reference_image_url:
+            payload["image"] = request.reference_image_url
+            payload["strength"] = request.image_strength
         url = f"{WAVESPEED_API_URL}/{self.config.model}/run"
         async with session.post(url, headers=self._headers, json=payload) as resp:
             resp.raise_for_status()

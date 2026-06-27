@@ -6,7 +6,7 @@ Generate avatar images in batch using the [WaveSpeed](https://wavespeed.ai) API.
 
 ```bash
 pip install -r requirements.txt
-export WAVESPEED_API_KEY=your_api_key_here
+export WAVESPEED_API_KEY=your_api_key_here   # get this from wavespeed.ai → API Keys
 ```
 
 ## Usage
@@ -35,10 +35,17 @@ Options:
     "width": 512,
     "height": 512,
     "num_inference_steps": 28,
-    "guidance_scale": 3.5
+    "guidance_scale": 3.5,
+    "reference_image_url": "https://your-public-url.com/your-avatar.jpg",
+    "image_strength": 0.75
   }
 ]
 ```
+
+| Field | Description |
+|-------|-------------|
+| `reference_image_url` | Publicly accessible URL of your reference avatar image. The model uses it as a visual starting point. |
+| `image_strength` | `0.0–1.0` — how much the reference influences the result. Higher = closer to your reference. Default `0.75`. |
 
 ## Output
 
