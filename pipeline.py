@@ -66,7 +66,7 @@ class WaveSpeedBatchPipeline:
             return data["data"]["id"]
 
     async def _poll(self, session: aiohttp.ClientSession, request_id: str) -> dict:
-        url = f"{WAVESPEED_API_URL}/predictions/{request_id}/fetch"
+        url = f"{WAVESPEED_API_URL}/predictions/{request_id}"
         deadline = asyncio.get_event_loop().time() + self.config.timeout
         while asyncio.get_event_loop().time() < deadline:
             async with session.get(url, headers=self._headers) as resp:
