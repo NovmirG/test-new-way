@@ -4,69 +4,89 @@
     "prompt": "Young woman in her early 20s, olive tan skin, dark hair messy and down, wearing an oversized sage green knit sweater, sitting on an unmade bed with soft warm morning light coming through the window, sleepy and disheveled expression, cozy bedroom background, natural no-makeup look, photorealistic portrait",
     "reference_image_url": "https://i.ibb.co/sp0x8c9q/406afcae0db4426ebbc0842e2ad8a4d1.png",
     "aspect_ratio": "1:1",
-    "output_format": "png"
+    "output_format": "png",
+    "quality": "high",
+    "resolution": "2k"
   },
   {
     "name": "avatar_02_coffee_shop",
     "prompt": "Young woman in her early 20s, olive tan skin, dark hair neatly pulled back, wearing a white crop top and high-waist light wash jeans, sitting in a cozy coffee shop with warm ambient lighting and wooden tables, holding a coffee cup warming both hands, soft relaxed expression, photorealistic portrait",
     "reference_image_url": "https://i.ibb.co/sp0x8c9q/406afcae0db4426ebbc0842e2ad8a4d1.png",
     "aspect_ratio": "1:1",
-    "output_format": "png"
+    "output_format": "png",
+    "quality": "high",
+    "resolution": "2k"
   },
   {
     "name": "avatar_03_library",
     "prompt": "Young woman in her early 20s, olive tan skin, dark hair pulled back, wearing a fitted black turtleneck, sitting in a university library with bookshelves in the background, reading and highlighting notes, focused expression, soft warm indoor lighting, photorealistic portrait",
     "reference_image_url": "https://i.ibb.co/sp0x8c9q/406afcae0db4426ebbc0842e2ad8a4d1.png",
     "aspect_ratio": "1:1",
-    "output_format": "png"
+    "output_format": "png",
+    "quality": "high",
+    "resolution": "2k"
   },
   {
     "name": "avatar_04_bathroom_vanity",
     "prompt": "Young woman in her early 20s, olive tan skin, dark hair half-up getting ready, wearing a grey athletic crop top and leggings, standing in a bathroom with bright overhead vanity lighting, fixing hair, candid getting-ready moment, photorealistic portrait",
     "reference_image_url": "https://i.ibb.co/sp0x8c9q/406afcae0db4426ebbc0842e2ad8a4d1.png",
     "aspect_ratio": "1:1",
-    "output_format": "png"
+    "output_format": "png",
+    "quality": "high",
+    "resolution": "2k"
   },
   {
     "name": "avatar_05_park_sunny",
     "prompt": "Young woman in her early 20s, olive tan skin, dark hair down, wearing a floral slip dress with delicate jewelry, sitting in a sunny park with dappled sunlight through trees, scrolling her phone with a distracted expression, golden hour light, photorealistic portrait",
     "reference_image_url": "https://i.ibb.co/sp0x8c9q/406afcae0db4426ebbc0842e2ad8a4d1.png",
     "aspect_ratio": "1:1",
-    "output_format": "png"
+    "output_format": "png",
+    "quality": "high",
+    "resolution": "2k"
   },
   {
     "name": "avatar_06_kitchen_snack",
     "prompt": "Young woman in her early 20s, olive tan skin, dark hair loose, wearing a soft baby-blue hoodie, no makeup look, standing in a cozy apartment kitchen, mid-snack caught off-guard, candid natural moment, warm kitchen lighting, photorealistic portrait",
     "reference_image_url": "https://i.ibb.co/sp0x8c9q/406afcae0db4426ebbc0842e2ad8a4d1.png",
     "aspect_ratio": "1:1",
-    "output_format": "png"
+    "output_format": "png",
+    "quality": "high",
+    "resolution": "2k"
   },
   {
     "name": "avatar_07_gym_mirror",
     "prompt": "Young woman in her early 20s, olive tan skin, dark hair in a ponytail, wearing a grey athletic set with crop top and leggings, standing in a gym locker room or studio mirror wall, post-workout slightly flushed expression, bright gym lighting, photorealistic portrait",
     "reference_image_url": "https://i.ibb.co/sp0x8c9q/406afcae0db4426ebbc0842e2ad8a4d1.png",
     "aspect_ratio": "1:1",
-    "output_format": "png"
+    "output_format": "png",
+    "quality": "high",
+    "resolution": "2k"
   },
   {
     "name": "avatar_08_car_selfie",
     "prompt": "Young woman in her early 20s, olive tan skin, dark hair down, wearing a white ribbed tank top with a simple gold necklace, sitting in a parked car taking a rearview mirror selfie, slightly bored waiting expression, natural daylight through car window, photorealistic portrait",
     "reference_image_url": "https://i.ibb.co/sp0x8c9q/406afcae0db4426ebbc0842e2ad8a4d1.png",
     "aspect_ratio": "1:1",
-    "output_format": "png"
+    "output_format": "png",
+    "quality": "high",
+    "resolution": "2k"
   },
   {
     "name": "avatar_09_rainy_day",
     "prompt": "Young woman in her early 20s, olive tan skin, dark hair loosely down, wearing a cozy beige cardigan over a white tee with wide-leg trousers, curled up indoors on a cozy rainy day, relaxed calm expression, soft moody indoor lighting, photorealistic portrait",
     "reference_image_url": "https://i.ibb.co/sp0x8c9q/406afcae0db4426ebbc0842e2ad8a4d1.png",
     "aspect_ratio": "1:1",
-    "output_format": "png"
+    "output_format": "png",
+    "quality": "high",
+    "resolution": "2k"
   },
   {
     "name": "avatar_10_park_yellow",
     "prompt": "Young woman in her early 20s, olive tan skin, dark hair pulled back, wearing a pastel yellow button-up shirt half-tucked, standing in a sunny park, holding a coffee cup, warm cheerful natural expression, bright outdoor sunlight, photorealistic portrait",
     "reference_image_url": "https://i.ibb.co/sp0x8c9q/406afcae0db4426ebbc0842e2ad8a4d1.png",
     "aspect_ratio": "1:1",
-    "output_format": "png"
+    "output_format": "png",
+    "quality": "high",
+    "resolution": "2k"
   }
 ]

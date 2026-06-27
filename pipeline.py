@@ -11,7 +11,7 @@ from pathlib import Path
 from dataclasses import dataclass, field
 
 
-WAVESPEED_API_URL = "https://api.wavespeed.ai/api/v2"
+WAVESPEED_API_URL = "https://api.wavespeed.ai/api/v3"
 DEFAULT_MODEL = "openai/gpt-image-2/edit"
 OUTPUT_DIR = Path("output/avatars")
 
@@ -23,6 +23,8 @@ class AvatarRequest:
     name: str = ""
     aspect_ratio: str = "1:1"
     output_format: str = "png"
+    quality: str = "high"
+    resolution: str = "2k"
 
 
 @dataclass
@@ -50,6 +52,8 @@ class WaveSpeedBatchPipeline:
             "images": [request.reference_image_url],
             "aspect_ratio": request.aspect_ratio,
             "output_format": request.output_format,
+            "quality": request.quality,
+            "resolution": request.resolution,
             "enable_base64_output": False,
             "enable_sync_mode": False,
         }
