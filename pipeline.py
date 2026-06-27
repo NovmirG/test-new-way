@@ -11,7 +11,7 @@ from pathlib import Path
 from dataclasses import dataclass, field
 
 
-WAVESPEED_API_URL = "https://api.wavespeed.ai/api/v3"
+WAVESPEED_API_URL = "https://api.wavespeed.ai/api/v2"
 DEFAULT_MODEL = "openai/gpt-image-2/edit"
 OUTPUT_DIR = Path("output/avatars")
 
