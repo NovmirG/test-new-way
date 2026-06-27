@@ -1,36 +1,28 @@
 """
 WaveSpeed Batch Image Pipeline for Avatar Generation
+Uses openai/gpt-image-2/edit
 """
 
 import os
 import asyncio
 import aiohttp
 import json
-import base64
 from pathlib import Path
 from dataclasses import dataclass, field
-from typing import Optional
 
 
 WAVESPEED_API_URL = "https://api.wavespeed.ai/api/v3"
-DEFAULT_MODEL = "wavespeed-ai/flux-dev-ultra-fast"
+DEFAULT_MODEL = "openai/gpt-image-2/edit"
 OUTPUT_DIR = Path("output/avatars")
 
 
 @dataclass
 class AvatarRequest:
     prompt: str
-    negative_prompt: str = ""
-    width: int = 512
-    height: int = 512
-    num_inference_steps: int = 28
-    guidance_scale: float = 3.5
-    seed: int = -1
+    reference_image_url: str
     name: str = ""
-    # URL of a reference avatar image to guide generation (img2img)
-    reference_image_url: str = ""
-    # How strongly the reference image influences the output (0.0–1.0)
-    image_strength: float = 0.75
+    aspect_ratio: str = "1:1"
+    output_format: str = "png"
 
 
 @dataclass
@@ -55,17 +47,12 @@ class WaveSpeedBatchPipeline:
     async def _submit(self, session: aiohttp.ClientSession, request: AvatarRequest) -> str:
         payload = {
             "prompt": request.prompt,
-            "negative_prompt": request.negative_prompt,
-            "width": request.width,
-            "height": request.height,
-            "num_inference_steps": request.num_inference_steps,
-            "guidance_scale": request.guidance_scale,
-            "seed": request.seed,
-            "enable_safety_checker": True,
+            "images": [request.reference_image_url],
+            "aspect_ratio": request.aspect_ratio,
+            "output_format": request.output_format,
+            "enable_base64_output": False,
+            "enable_sync_mode": False,
         }
-        if request.reference_image_url:
-            payload["image"] = request.reference_image_url
-            payload["strength"] = request.image_strength
         url = f"{WAVESPEED_API_URL}/{self.config.model}/run"
         async with session.post(url, headers=self._headers, json=payload) as resp:
             if not resp.ok:
