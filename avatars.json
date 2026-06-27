@@ -1,7 +1,7 @@
 [
   {
-    "name": "avatar_professional",
-    "prompt": "Professional headshot portrait of a person, clean background, studio lighting, high quality, photorealistic",
+    "name": "avatar_01_professional",
+    "prompt": "Professional headshot portrait, clean white background, studio lighting, high quality, photorealistic",
     "negative_prompt": "blurry, low quality, distorted, cartoon",
     "width": 512,
     "height": 512,
@@ -11,21 +11,102 @@
     "image_strength": 0.75
   },
   {
-    "name": "avatar_artistic",
+    "name": "avatar_02_artistic",
     "prompt": "Artistic digital avatar, vibrant colors, stylized portrait, modern illustration style",
     "negative_prompt": "blurry, low quality, photorealistic",
     "width": 512,
     "height": 512,
     "num_inference_steps": 28,
-    "guidance_scale": 3.5
+    "guidance_scale": 3.5,
+    "reference_image_url": "https://i.ibb.co/sp0x8c9q/406afcae0db4426ebbc0842e2ad8a4d1.png",
+    "image_strength": 0.7
   },
   {
-    "name": "avatar_minimal",
+    "name": "avatar_03_minimal",
     "prompt": "Minimal clean avatar icon, flat design, simple geometric face, white background",
     "negative_prompt": "complex, detailed, photorealistic, dark",
     "width": 512,
     "height": 512,
     "num_inference_steps": 20,
-    "guidance_scale": 3.0
+    "guidance_scale": 3.0,
+    "reference_image_url": "https://i.ibb.co/sp0x8c9q/406afcae0db4426ebbc0842e2ad8a4d1.png",
+    "image_strength": 0.65
+  },
+  {
+    "name": "avatar_04_cyberpunk",
+    "prompt": "Cyberpunk avatar portrait, neon lights, futuristic city background, glowing eyes, high detail",
+    "negative_prompt": "blurry, low quality, vintage, old",
+    "width": 512,
+    "height": 512,
+    "num_inference_steps": 30,
+    "guidance_scale": 4.0,
+    "reference_image_url": "https://i.ibb.co/sp0x8c9q/406afcae0db4426ebbc0842e2ad8a4d1.png",
+    "image_strength": 0.7
+  },
+  {
+    "name": "avatar_05_anime",
+    "prompt": "Anime style avatar portrait, clean lineart, soft colors, expressive eyes, manga illustration",
+    "negative_prompt": "photorealistic, blurry, low quality, western cartoon",
+    "width": 512,
+    "height": 512,
+    "num_inference_steps": 28,
+    "guidance_scale": 3.5,
+    "reference_image_url": "https://i.ibb.co/sp0x8c9q/406afcae0db4426ebbc0842e2ad8a4d1.png",
+    "image_strength": 0.7
+  },
+  {
+    "name": "avatar_06_watercolor",
+    "prompt": "Watercolor painting portrait avatar, soft brushstrokes, pastel tones, artistic",
+    "negative_prompt": "photorealistic, sharp, digital, low quality",
+    "width": 512,
+    "height": 512,
+    "num_inference_steps": 28,
+    "guidance_scale": 3.5,
+    "reference_image_url": "https://i.ibb.co/sp0x8c9q/406afcae0db4426ebbc0842e2ad8a4d1.png",
+    "image_strength": 0.72
+  },
+  {
+    "name": "avatar_07_3d_render",
+    "prompt": "3D rendered avatar portrait, smooth shading, octane render, cinematic lighting, high detail",
+    "negative_prompt": "flat, 2D, blurry, low quality, cartoon",
+    "width": 512,
+    "height": 512,
+    "num_inference_steps": 30,
+    "guidance_scale": 4.0,
+    "reference_image_url": "https://i.ibb.co/sp0x8c9q/406afcae0db4426ebbc0842e2ad8a4d1.png",
+    "image_strength": 0.75
+  },
+  {
+    "name": "avatar_08_fantasy",
+    "prompt": "Fantasy portrait avatar, magical aura, ethereal glow, intricate details, epic lighting",
+    "negative_prompt": "blurry, low quality, modern, mundane",
+    "width": 512,
+    "height": 512,
+    "num_inference_steps": 30,
+    "guidance_scale": 4.0,
+    "reference_image_url": "https://i.ibb.co/sp0x8c9q/406afcae0db4426ebbc0842e2ad8a4d1.png",
+    "image_strength": 0.7
+  },
+  {
+    "name": "avatar_09_noir",
+    "prompt": "Black and white noir style portrait avatar, dramatic shadows, moody lighting, cinematic",
+    "negative_prompt": "color, bright, cheerful, blurry, low quality",
+    "width": 512,
+    "height": 512,
+    "num_inference_steps": 28,
+    "guidance_scale": 3.5,
+    "reference_image_url": "https://i.ibb.co/sp0x8c9q/406afcae0db4426ebbc0842e2ad8a4d1.png",
+    "image_strength": 0.72
+  },
+  {
+    "name": "avatar_10_pixel_art",
+    "prompt": "Pixel art avatar portrait, retro game style, 16-bit, vibrant colors, clean pixels",
+    "negative_prompt": "photorealistic, blurry, smooth, high resolution",
+    "width": 512,
+    "height": 512,
+    "num_inference_steps": 20,
+    "guidance_scale": 3.0,
+    "reference_image_url": "https://i.ibb.co/sp0x8c9q/406afcae0db4426ebbc0842e2ad8a4d1.png",
+    "image_strength": 0.65
   }
 ]
