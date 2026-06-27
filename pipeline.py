@@ -150,11 +150,12 @@ def main():
     parser.add_argument("--concurrent", type=int, default=4)
     parser.add_argument("--output-dir", default="output/avatars")
     parser.add_argument("--timeout", type=int, default=300)
+    parser.add_argument("--api-key", help="WaveSpeed API key (overrides WAVESPEED_API_KEY env var)")
     args = parser.parse_args()
 
-    api_key = os.environ.get("WAVESPEED_API_KEY")
+    api_key = args.api_key or os.environ.get("WAVESPEED_API_KEY")
     if not api_key:
-        raise SystemExit("Error: WAVESPEED_API_KEY environment variable not set")
+        raise SystemExit("Error: provide --api-key or set WAVESPEED_API_KEY")
 
     config = PipelineConfig(
         api_key=api_key,
