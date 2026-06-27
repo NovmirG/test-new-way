@@ -56,7 +56,8 @@ class WaveSpeedBatchPipeline:
         payload = {
             "prompt": request.prompt,
             "negative_prompt": request.negative_prompt,
-            "size": f"{request.width}*{request.height}",
+            "width": request.width,
+            "height": request.height,
             "num_inference_steps": request.num_inference_steps,
             "guidance_scale": request.guidance_scale,
             "seed": request.seed,
@@ -67,7 +68,9 @@ class WaveSpeedBatchPipeline:
             payload["strength"] = request.image_strength
         url = f"{WAVESPEED_API_URL}/{self.config.model}/run"
         async with session.post(url, headers=self._headers, json=payload) as resp:
-            resp.raise_for_status()
+            if not resp.ok:
+                body = await resp.text()
+                raise RuntimeError(f"HTTP {resp.status} from WaveSpeed: {body}")
             data = await resp.json()
             return data["data"]["id"]
 
