@@ -23,8 +23,8 @@ class AvatarRequest:
     name: str = ""
     aspect_ratio: str = "1:1"
     output_format: str = "png"
-    quality: str = "high"
-    resolution: str = "2k"
+    quality: str = "medium"
+    resolution: str = "1k"
 
 
 @dataclass

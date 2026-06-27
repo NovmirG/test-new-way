@@ -5,8 +5,8 @@
     "reference_image_url": "https://i.ibb.co/sp0x8c9q/406afcae0db4426ebbc0842e2ad8a4d1.png",
     "aspect_ratio": "1:1",
     "output_format": "png",
-    "quality": "high",
-    "resolution": "2k"
+    "quality": "medium",
+    "resolution": "1k"
   },
   {
     "name": "avatar_02_coffee_shop",
@@ -14,8 +14,8 @@
     "reference_image_url": "https://i.ibb.co/sp0x8c9q/406afcae0db4426ebbc0842e2ad8a4d1.png",
     "aspect_ratio": "1:1",
     "output_format": "png",
-    "quality": "high",
-    "resolution": "2k"
+    "quality": "medium",
+    "resolution": "1k"
   },
   {
     "name": "avatar_03_library",
@@ -23,8 +23,8 @@
     "reference_image_url": "https://i.ibb.co/sp0x8c9q/406afcae0db4426ebbc0842e2ad8a4d1.png",
     "aspect_ratio": "1:1",
     "output_format": "png",
-    "quality": "high",
-    "resolution": "2k"
+    "quality": "medium",
+    "resolution": "1k"
   },
   {
     "name": "avatar_04_bathroom_vanity",
@@ -32,8 +32,8 @@
     "reference_image_url": "https://i.ibb.co/sp0x8c9q/406afcae0db4426ebbc0842e2ad8a4d1.png",
     "aspect_ratio": "1:1",
     "output_format": "png",
-    "quality": "high",
-    "resolution": "2k"
+    "quality": "medium",
+    "resolution": "1k"
   },
   {
     "name": "avatar_05_park_sunny",
@@ -41,8 +41,8 @@
     "reference_image_url": "https://i.ibb.co/sp0x8c9q/406afcae0db4426ebbc0842e2ad8a4d1.png",
     "aspect_ratio": "1:1",
     "output_format": "png",
-    "quality": "high",
-    "resolution": "2k"
+    "quality": "medium",
+    "resolution": "1k"
   },
   {
     "name": "avatar_06_kitchen_snack",
@@ -50,8 +50,8 @@
     "reference_image_url": "https://i.ibb.co/sp0x8c9q/406afcae0db4426ebbc0842e2ad8a4d1.png",
     "aspect_ratio": "1:1",
     "output_format": "png",
-    "quality": "high",
-    "resolution": "2k"
+    "quality": "medium",
+    "resolution": "1k"
   },
   {
     "name": "avatar_07_gym_mirror",
@@ -59,8 +59,8 @@
     "reference_image_url": "https://i.ibb.co/sp0x8c9q/406afcae0db4426ebbc0842e2ad8a4d1.png",
     "aspect_ratio": "1:1",
     "output_format": "png",
-    "quality": "high",
-    "resolution": "2k"
+    "quality": "medium",
+    "resolution": "1k"
   },
   {
     "name": "avatar_08_car_selfie",
@@ -68,8 +68,8 @@
     "reference_image_url": "https://i.ibb.co/sp0x8c9q/406afcae0db4426ebbc0842e2ad8a4d1.png",
     "aspect_ratio": "1:1",
     "output_format": "png",
-    "quality": "high",
-    "resolution": "2k"
+    "quality": "medium",
+    "resolution": "1k"
   },
   {
     "name": "avatar_09_rainy_day",
@@ -77,8 +77,8 @@
     "reference_image_url": "https://i.ibb.co/sp0x8c9q/406afcae0db4426ebbc0842e2ad8a4d1.png",
     "aspect_ratio": "1:1",
     "output_format": "png",
-    "quality": "high",
-    "resolution": "2k"
+    "quality": "medium",
+    "resolution": "1k"
   },
   {
     "name": "avatar_10_park_yellow",
@@ -86,7 +86,7 @@
     "reference_image_url": "https://i.ibb.co/sp0x8c9q/406afcae0db4426ebbc0842e2ad8a4d1.png",
     "aspect_ratio": "1:1",
     "output_format": "png",
-    "quality": "high",
-    "resolution": "2k"
+    "quality": "medium",
+    "resolution": "1k"
   }
 ]
