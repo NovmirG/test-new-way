@@ -13,7 +13,7 @@ from typing import Optional
 
 
 WAVESPEED_API_URL = "https://api.wavespeed.ai/api/v3"
-DEFAULT_MODEL = "wavespeed-ai/flux-dev"
+DEFAULT_MODEL = "wavespeed-ai/flux-dev-ultra-fast"
 OUTPUT_DIR = Path("output/avatars")
 
 
